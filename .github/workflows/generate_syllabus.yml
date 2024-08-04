@@ -17,20 +17,20 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v3
       
-      - name: Compile LaTeX document 001
-        id: compile-latex-document-001
+      - name: Compile LaTeX document 010
+        id: compile-latex-document-010
         uses: thomas-chauvet/latex2pdf-action@1.1.0
         with:
           output_dir: PDF
-          main_latex_file: source/001/Section_001_Spring_2024.tex
+          main_latex_file: source/010/Section_010_Fall_2024.tex
           ctan_packages: moderncv colortbl fontawesome lua-uni-algos fullpage preprint
          
       - name: Upload PDF to the workflow tab
-        id: upload-workflow-001
+        id: upload-workflow-010
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: PDF/Section_001_Spring_2024.pdf
+          path: PDF/Section_010_Fall_2024.pdf
           
       - name: Deploy back to gh
         env:
