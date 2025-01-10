@@ -1,5 +1,5 @@
 # Course-Syllabus
-Fall 2024 Syllabus
+Spring 2025 Syllabus
 
 This is the source code for the CSE 4380 Information Systems (Spring 2025) [course](http://www.cse4380.org) syllabus.  
 
