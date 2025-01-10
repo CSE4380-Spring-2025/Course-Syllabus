@@ -22,7 +22,7 @@ jobs:
         uses: thomas-chauvet/latex2pdf-action@1.1.0
         with:
           output_dir: PDF
-          main_latex_file: source/010/Section_010_Fall_2024.tex
+          main_latex_file: source/010/Section_010_Spring_2025.tex
           ctan_packages: moderncv colortbl fontawesome lua-uni-algos fullpage preprint
          
       - name: Upload PDF to the workflow tab
@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: PDF/Section_010_Fall_2024.pdf
+          path: PDF/Section_010_Spring_2025.pdf
           
       - name: Deploy back to gh
         env:
